@@ -21,6 +21,10 @@ jobs:
       - name: Upgrade pip
         run: |
           python -m pip install --upgrade pip
+          
+      - name: Install numpy first
+        run: |
+          pip install numpy==1.23.5  # Adjust version as needed
       
       - name: Install dependencies
         run: |
