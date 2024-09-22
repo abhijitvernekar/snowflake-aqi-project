@@ -1,10 +1,10 @@
 name: india_air_quality_json
 
 on:
-  workflow_dispatch:
+#   workflow_dispatch:
   # Uncomment the following lines to enable scheduled runs
-  # schedule:
-  #   - cron: '45 * * * *'  # Runs every 45th minute
+  schedule:
+    - cron: '45 * * * *'  # Runs every 45th minute
 
 jobs:
   build:
